@@ -3,4 +3,7 @@ class List < ApplicationRecord
   validates :title, presence: true
   validates :body, presence: true
 
+  # 「開発スキルアップ【Rails】find, find_by, whereを理解しよう」のために以下をコメントアウトする
+  # validates :image,presence:true
+
 end
