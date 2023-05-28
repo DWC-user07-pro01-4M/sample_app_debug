@@ -1,5 +1,4 @@
 class ListsController < ApplicationController
-
   def new
     @list = List.new
   end
@@ -32,15 +31,13 @@ class ListsController < ApplicationController
   end
 
   def destroy
-    list = List.find(params[:id])  # データ（レコード）を1件取得
-    list.destroy  # データ（レコード）を削除
-    redirect_to lists_path  # 投稿一覧画面へリダイレクト
+    list = List.find(params[:id])
+    list.destroy
+    redirect_to lists_path
   end
 
   private
-
-  def list_params
-    params.require(:list).permit(:title, :body, :image)
-  end
-
+    def list_params
+      params.require(:list).permit(:title, :body, :image)
+    end
 end

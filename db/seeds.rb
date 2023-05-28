@@ -5,5 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-List.create!(title: "test_title",body: "test_body")
-List.create!(title: "test_title2",body: "test_body2")
+List.create!(title: "test_title", body: "test_body")
+List.create!(title: "test_title2", body: "test_body2")
